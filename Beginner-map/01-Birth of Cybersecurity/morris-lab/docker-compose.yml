@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  morris-lab:
+    build: .
+    container_name: morris-lab
+
+    tty: true
+    stdin_open: true
+
+    ports:
+      - "2222:22"
